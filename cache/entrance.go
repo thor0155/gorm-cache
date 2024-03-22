@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/Pacific73/gorm-cache/config"
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 )
 
 func NewGorm2Cache(cacheConfig *config.CacheConfig) (*Gorm2Cache, error) {
@@ -28,7 +28,7 @@ func NewRedisConfigWithOptions(options *redis.Options) *config.RedisConfig {
 	}
 }
 
-func NewRedisConfigWithClient(client *redis.Client) *config.RedisConfig {
+func NewRedisConfigWithClient(client redis.UniversalClient) *config.RedisConfig {
 	return &config.RedisConfig{
 		Mode:   config.RedisConfigModeRaw,
 		Client: client,

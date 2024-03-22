@@ -6,11 +6,11 @@ import (
 
 	"github.com/Pacific73/gorm-cache/config"
 	"github.com/Pacific73/gorm-cache/util"
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 )
 
 type RedisLayer struct {
-	client    *redis.Client
+	client    redis.UniversalClient
 	ttl       int64
 	logger    config.LoggerInterface
 	keyPrefix string

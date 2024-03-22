@@ -10,14 +10,15 @@ import (
 	"github.com/Pacific73/gorm-cache/cache"
 
 	"github.com/Pacific73/gorm-cache/config"
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
 
 var (
-	username     = "root"
-	password     = "Zcydf741205,."
+	username = "root"
+	// password     = "Zcydf741205,."
+	password     = ""
 	databaseName = "site_reldb"
 	ip           = "localhost"
 	port         = "3306"
