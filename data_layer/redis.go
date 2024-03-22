@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/Pacific73/gorm-cache/config"
-	"github.com/Pacific73/gorm-cache/util"
 	"github.com/redis/go-redis/v9"
+	"github.com/thor0155/gorm-cache/config"
+	"github.com/thor0155/gorm-cache/util"
 )
 
 type RedisLayer struct {

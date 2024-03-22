@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Pacific73/gorm-cache/config"
-	"github.com/Pacific73/gorm-cache/util"
 	"github.com/karlseguin/ccache/v2"
+	"github.com/thor0155/gorm-cache/config"
+	"github.com/thor0155/gorm-cache/util"
 )
 
 type MemoryLayer struct {
