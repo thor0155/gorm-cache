@@ -33,6 +33,9 @@ type CacheConfig struct {
 
 	// DebugLogger
 	DebugLogger LoggerInterface
+
+	//Parameter `InstanceId` that stores the prefix word of the key, if this is empty it will be randomly generated
+	ProjectId string
 }
 
 type CacheLevel int
